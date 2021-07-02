@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1::before{
+            content:"Hello ";
+            color: rgb(11, 58, 59);
+            font-size: 40px;
+            background-color: cyan;
+        }
+        .h-effect::after{
+            content: " Good Bye";
+            color: darkblue;
+            font-size: 30px;
+            background-color: rgb(185, 113, 221);
+        }
+        body{
+            counter-reset: section;
+        }
+        p::before{
+            counter-increment: section;
+            counter: "std" counter(section) ":";
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Pseudo class </h1>
+    <h1 class="h-effect">Normal class</h1>
+    <h1 class="h-effect">Special class</h1>
+    <input name= "email" type="text">
+    <br>
+    <input name= "password" type="text">
+    <br>
+    <a href="https://www.linkedin.com/in/sumaiya-sumu-8a07331a9/">Click Me!</a>
+        <p>Marry</p>
+        <p>Rose</p>
+        <p>Lee</p>
+        <p>Geeu</p>
+        <p>Fitu</p>
+        <p>Jita</p>
+        <p>Shinji</p>
+</body>
+</html>
